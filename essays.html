@@ -1,13 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Essays - Ride The Kaliyuga</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essays | Ride The Kaliyuga</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #faf3e0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c2a29;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1em 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    .essay-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    .essay-card {
+      background-color: #fff;
+      border: 2px solid #ffcc00;
+      padding: 1.5em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .essay-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .essay-card h2 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    .essay-meta {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 0.8em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #2c2a29;
+      color: white;
+      margin-top: 3em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Essays</h1>
-  <p>Coming soon...</p>
-  <a href="index.html">← Back to Home</a>
+  <header>
+    <h1>Ride The Kaliyuga</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="essays.html">Essays</a></li>
+        <li><a href="poems.html">Poems</a></li>
+        <li><a href="reflections.html">Reflections</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Essays</h2>
+    <div class="essay-list">
+      <a href="essays/mean-understand.html" class="essay-card">
+        <h2>Do you MEAN what I UNDERSTAND?</h2>
+        <div class="essay-meta">By Harsh Patel | Published: April 26, 2025</div>
+        <p>Yes, you read that right. Let's see if you can understand what I mean.</p>
+      </a>
+
+      <a href="essays/thebdayessay.html" class="essay-card">
+        <h2>The Birthday Essay</h2>
+        <div class="essay-meta">By Harsh Patel | Published: January 26, 2025</div>
+        <p>When was the last time you 'celebrated' your birthday?</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ride The Kaliyuga. Made with heart and heat.</p>
+  </footer>
 </body>
 </html>
